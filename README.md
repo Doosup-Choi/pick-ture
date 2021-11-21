@@ -7,3 +7,4 @@ This is a Pick-ture project.
 
 2. crawling 폴더 내 crawling.ipynb 실행
     * query / display / start / sort 를 활용하여 크롤링 조건 변경
+    * 이미지 다운로드
