@@ -29,16 +29,16 @@ router = APIRouter()
 def return_main_info(): 
  
     results = {
-        "main_image_path": "S3://../ABC.jpg",
+        "main_image_path": "s3://pick-ture/data/images/29144993851.20211008053617.jpg",
         "categories": {
             "category_name": "modern art",
             "image_list": [
                 {
-                    "image_path": "S3://../ABC1.jpg",
+                    "image_path": "s3://pick-ture/data/images/29145550030.20211007212152.jpg",
                     "image_idx": 1
                 },
                 {
-                    "image_path": "S3://../ABC2.jpg",
+                    "image_path": "s3://pick-ture/data/images/29145601994.20211007214023.jpg",
                     "image_idx": 2
                 }
            ]
@@ -55,8 +55,8 @@ def return_main_info():
 )
 def return_recommend_images(
         input_path: str = Query(
-        "S3://../../ABC.jpg",
-        example="S3://../../ABC.jpg",
+        "s3://pick-ture/data/images/29144993851.20211008053617.jpg",
+        example="s3://pick-ture/data/images/29144993851.20211008053617.jpg",
         description="사용자가 촬영 or 업로드한 이미지를 S3애 저장한 경로",
         title="입력 이미지 경로",
     )
@@ -67,11 +67,11 @@ def return_recommend_images(
             "category_name": "modern art",
             "image_list": [
                 {
-                    "image_path": "S3://../ABC1.jpg",
+                    "image_path": "s3://pick-ture/data/images/29145550030.20211007212152.jpg",
                     "image_idx": 1
                 },
                 {
-                    "image_path": "S3://../ABC2.jpg",
+                    "image_path": "s3://pick-ture/data/images/29145601994.20211007214023.jpg",
                     "image_idx": 2
                 }
            ]
@@ -98,9 +98,9 @@ def return_recommend_results(
     results = {
         "recommend_description" : "In general, it is judged that a modern picture would suit the cozy living room in white tones.",
         "image_info" : {
-            "image_path" : "S3://../ABC.jpg",
-            "image_idx" : 12345,
-            "purchase_link" : "http://.../ABC.com",
+            "image_path" : "s3://pick-ture/data/images/29145550030.20211007212152.jpg",
+            "image_idx" : 1,
+            "purchase_link" : "https://search.shopping.naver.com/gate.nhn?id=11075590198",
             "price" : "10000",
             "mall_name" : "네이버",
         }
