@@ -95,5 +95,15 @@ def return_recommend_results(
     )
 ): 
 
+    results = {
+        "recommend_description" : "In general, it is judged that a modern picture would suit the cozy living room in white tones.",
+        "image_info" : {
+            "image_path" : "S3://../ABC.jpg",
+            "image_idx" : 12345,
+            "purchase_link" : "http://.../ABC.com",
+            "price" : "10000",
+            "mall_name" : "네이버",
+        }
+    }
 
-    return
+    return results
